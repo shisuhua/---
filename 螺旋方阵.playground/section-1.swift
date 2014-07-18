@@ -43,15 +43,20 @@ while true {
     }
 }
 
+
 for i in 0...6{
     for j in 0...6{
-        print(board[i][j])
-        print(" ")
+        if board[i][j] > 9 {
+            print(board[i][j])
+            print(" ")
+        }else{
+            print("0\(board[i][j])")
+            print(" ")
+        }
+        
     }
     println()
 }
-
-
 
 
 
